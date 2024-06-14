@@ -6,6 +6,7 @@
     .gandalfpill {transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; background-color: white; padding:0 8px; border-radius: 999px;}
 .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
 .gandalfpill:hover {border:1px  solid white; background-color: black;  transform: translateY(-5px); transition: all ease .2s;}
+.back2top {font-size:2px}
 </STYLE>
 
 <footer id="footer">
@@ -76,12 +77,21 @@
     </div>
 
     <div class="credit">
+      
+      
+        <div class="container">
+        
+            <span class="copyright">
+                © {% year %} {{client.name}}</span>
+                <a class="back2top" href="#top">Back to top</a>
+        </div>
+
         <span>Designed & Hand Coded by</span>
+       
         <a class="gandalfpill" href="/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo" height="12"></a>
-        <BR><BR><BR>
-        <span class="copyright">
-            © {% year %} {{client.name}}</span>
-            <a href="#top">Back to top</a>
+  
+           
     </div>
+
 </footer>
 

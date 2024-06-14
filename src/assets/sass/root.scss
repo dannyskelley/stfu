@@ -1256,7 +1256,7 @@
                 width: 96%;
                 ul {
                     margin-top: 0;
-                    margin-bottom: 0;
+                    margin-bottom: 100px;
                     padding: 0;
 
                     li {
@@ -1332,6 +1332,7 @@
             max-width: 82.5rem;
             margin-top: calc(100 / 16 * 1rem);
             width: 96%;
+            text-align: center;
             font-size: calc(16 / 16 * .8rem);
             font-weight: 100;
             line-height: calc(36 / 16 * 1rem);
@@ -1368,7 +1369,7 @@
             margin: auto;
             max-width: calc(1320 / 16 * 1rem);
             width: 96%;
-            padding: 300px 0;
+            padding: 100px 0;
         }
 
         .left-section {
@@ -1378,7 +1379,7 @@
 
             .logo {
                 margin-left: 0;
-                height: calc(40 / 16 * 3rem);
+                height: calc(40 / 16 * 2.5rem);
                 text-align: left;
             }
 
@@ -1391,7 +1392,7 @@
         .right-section {
             margin: 0;
             max-width: none;
-            width: calc(609 / 16 * 1rem);
+            width: calc(609 / 16 * 1.2rem);
 
             .lists {
                 margin: 0;
