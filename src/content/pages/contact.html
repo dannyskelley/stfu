@@ -390,187 +390,7 @@ eleventyNavigation:
     }
 }
 
-/*-- -------------------------- -->
-<---          Reviews           -->
-<--- -------------------------- -*/
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #reviews-1403 {
-        /* centers the button */
-        text-align: center;
-        padding: var(--sectionPadding);
-        /* clips the orbs from causing overflow issues */
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-    }
-    #reviews-1403 .cs-container {
-        width: 100%;
-        /* changes to 1024px at tablet */
-        max-width: 36.5rem;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* 48px - 64px */
-        gap: clamp(3rem, 6vw, 4rem);
-    }
-    #reviews-1403 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: center;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: center;
-    }
-    #reviews-1403 .cs-topper {
-        font-size: var(--topperFontSize);
-        line-height: 1.2em;
-        text-transform: uppercase;
-        text-align: inherit;
-        letter-spacing: 0.1em;
-        font-weight: 700;
-        color: var(--primary);
-        margin-bottom: 0.25rem;
-        display: block;
-    }
-    #reviews-1403 .cs-title {
-        font-size: var(--headerFontSize);
-        font-weight: 900;
-        line-height: 1.2em;
-        text-align: inherit;
-        max-width: 43.75rem;
-        margin: 0 0 1rem 0;
-        color: var(--headerColor);
-        position: relative;
-    }
-    #reviews-1403 .cs-title {
-        max-width: 20ch;
-        margin: 0;
-    }
-    #reviews-1403 .cs-card-group {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        /* 16px - 20px */
-        gap: clamp(1rem, 2.5vw, 1.15rem);
-    }
-    #reviews-1403 .cs-item {
-        list-style: none;
-        text-align: left;
-        /* 20px - 60px */
-        padding: clamp(1rem, 4vw, 3.75rem);
-        background-color: #fff;
-        /* 12px - 24px */
-        border-radius: clamp(0.75rem, 1.5vw, 1.25rem);
-        /* prevents padding from adding to height and width */
-        box-sizing: border-box;
-        /* clips the pseudo box from overflowing */
-        overflow: hidden;
-        display: flex;
-        grid-column: span 12;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        position: relative;
-        z-index: 1;
-    }
-    #reviews-1403 .cs-item:before {
-        /* background color */
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: var(--primary);
-        opacity: 0.05;
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        /* prevents the mouse from interacting it */
-        pointer-events: none;
-    }
-    #reviews-1403 .cs-quote {
-        /* 72px - 120px */
-        width: clamp(4.5rem, 10vw, 7.5rem);
-        height: auto;
-        /* 32px - 64px */
-        margin-bottom: clamp(2rem, 6vw, 4rem);
-        display: block;
-    }
-    #reviews-1403 .cs-item-text {
-        /* 16px - 25px */
-        font-size: clamp(1rem, 2.6vw, 1.5625rem);
-        line-height: 1.2em;
-        font-weight: bold;
-        margin: 0;
-        /* 24px - 64px */
-        margin-bottom: clamp(1.5rem, 6vw, 4rem);
-        color: var(--bodyTextColor);
-    }
-    #reviews-1403 .cs-flex-group {
-        /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
-        margin-top: auto;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        /* 8px - 24px */
-        gap: clamp(0.8rem, 1.5vw, 1rem);
-    }
-    #reviews-1403 .cs-profile {
-        /* 40px - 52px */
-        width: clamp(2.5rem, 5vw, 3.25rem);
-        height: clamp(2.5rem, 5vw, 3.25rem);
-        margin: 0;
-        border-radius: 50%;
-        box-sizing: border-box;
-        border: 2px solid #fff;
-        /* clips image corners to make circle */
-        overflow: hidden;
-        position: relative;
-        display: block;
-    }
-    #reviews-1403 .cs-profile img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        /* makes the image behave like a background image */
-        object-fit: cover;
-    }
-    #reviews-1403 .cs-name {
-        /* 16px - 25px */
-        font-size: clamp(1rem, 2.5vw, 1.5625rem);
-        line-height: 1.2em;
-        font-weight: 700;
-        margin: 0;
-        color: var(--headerColor);
-        display: block;
-    }
-    #reviews-1403 .cs-job {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        font-weight: 400;
-        margin: 0;
-        color: #746f95;
-        display: block;
-    }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #reviews-1403 .cs-container {
-        max-width: 80rem;
-    }
-    #reviews-1403 .cs-item {
-        grid-column: span 6;
-    }
-}
 
                                 
 </STYLE>
@@ -616,8 +436,8 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Phone</span>
-                        <a href="tel:888-4565-789
-                        " class="cs-link">+1 (888) 4565 789
+                        <a href="tel:{{client.phoneForTel}}
+                        " class="cs-link">{{client.phoneFormatted}}
                         </a>
                     </div>
                 </li>
@@ -627,7 +447,7 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Email</span>
-                        <a href="mailto:Email@stitch.com" class="cs-link">Email@stitch.com</a>
+                        <a href="mailto:{{client.email}}" class="cs-link">{{client.email}}</a>
                     </div>
                 </li>
                 <li class="cs-li">
@@ -636,7 +456,15 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Address</span>
-                        <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
+                        <a class="cs-link" href="{{client.address.mapLink}}">
+                            {{client.address.lineOne}},
+                            <br/>
+                            <span class="cs-block">
+                                {{client.address.city}}
+                                {{client.address.state}}
+                                {{client.address.zip}}
+                            </span>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -671,55 +499,10 @@ eleventyNavigation:
 
 <section id="map-1403">
     <!--Replace this embed code with the google maps embed code of your clients location. To do so, google your clients business, click on the map picture that in the profile card to go to the map location. That will take you to Google maps, then find the share button in the left panel and click on it. You will be given a link to share and a button to copy link, ignore that! AAbove that is a tab that says "Embed a map", click that instead and it will bring up the embed code for you clients location in maps.  Click the button to copy the html and paste it in place of this entire iframe tag. Do not keep the original iframe. Replace it with the new one you got from google maps, unless you want to display a map of Wyoming, then you can keep this iframe. -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d94266.72398017619!2d-83.1836836625901!3d42.40995579452259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8824cdc288ba2611%3A0x64c31f2e8c195dd1!2sHighland%20Park%2C%20MI%2048203!3m2!1d42.409985299999995!2d-83.1012829!5e0!3m2!1sen!2sus!4v1718394264488!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="{{client.address.mapLink}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
-<!-- ============================================ -->
-<!--                   Reviews                    -->
-<!-- ============================================ -->
-
-<section id="reviews-1403">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Testimonials</span>
-            <h2 class="cs-title">Happy Client’s Feedback About Our Service</h2>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <!--Blue Quote-->
-                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pink-quotes.svg" decoding="async" alt="quote icon" width="120" height="99">
-                <p class="cs-item-text">
-                    Small businesses are the heartbeat of communities, embodying the spirit of entrepreneurship, determination, and local support. 
-                </p>
-                <div class="cs-flex-group">
-                    <picture class="cs-picture">
-                        <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
-                    </picture>
-                    <span class="cs-name">
-                        Britney Allison
-                        <span class="cs-job">Founder Of Yokoloko</span>
-                    </span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <!--Blue Quote-->
-                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pink-quotes.svg" decoding="async" alt="quote icon" width="120" height="99">
-                <p class="cs-item-text">
-                    I want to say a huge thank you to the Stitch team. The guys in a short time and very efficiently helped me with the development of a website for my new startup.
-                </p>
-                <div class="cs-flex-group">
-                    <picture class="cs-picture">
-                        <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile3.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
-                    </picture>
-                    <span class="cs-name">
-                        Jessica Jonson
-                        <span class="cs-job">CTO Of Meriette</span>
-                    </span>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
+  {% include 'components/testimonials.html' %}
                                 
 
 {% endblock %}
