@@ -24,7 +24,7 @@
     display: block;
     top: 0;
     left: 0;
-    transition: height .3s;
+    transition: height .3ms;
   }
   body.scroll #cs-navigation {
     width: 100%;
@@ -33,6 +33,7 @@
   }
   body.scroll #cs-navigation:before {
     border-radius: 0;
+    transition: all ease  .2ms;
   }
   body.scroll #cs-navigation .cs-ul-wrapper {
     top: 100%;
