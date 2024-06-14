@@ -1105,7 +1105,6 @@
     margin-top: 3.125rem;
   }
   #footer .right-section .lists ul:nth-of-type(3) li {
-    display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 1rem;

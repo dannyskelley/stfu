@@ -65,7 +65,7 @@
     padding: 0;
     padding-left: 1.25rem;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 9999px;
     /* prevents padding from adding to width and height */
     box-sizing: border-box;
     display: block;
@@ -73,45 +73,11 @@
   #cta-301 .cs-input::placeholder {
     color: #767676;
   }
-  #cta-301 .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    min-width: 9.375rem;
-    padding: 0 1.5rem;
-    background-color: var(--primaryLight);
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-  }
-  #cta-301 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.25rem;
-    transition: width 0.3s;
-  }
-  #cta-301 .cs-button-solid:hover:before {
-    width: 100%;
-  }
+ 
   #cta-301 .cs-submit {
     width: 100%;
     border: none;
-    color: var(--headerColor);
+   
   }
   #cta-301 .cs-background {
     width: 100%;
@@ -176,11 +142,12 @@
 /* Large Desktop 1300px - Parallax Scroll */
 @media only screen and (min-width: 81.25rem) {
   #cta-301 {
-    background: url("https://csimg.nyc3.digitaloceanspaces.com/CTA/scale.jpg");
+    background: url("/assets/images/bottom.jpg");
     background-size: cover;
     background-position: center 20%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: #000;
   }
   #cta-301 .cs-background img {
     display: none;
@@ -192,22 +159,22 @@
 <section id="cta-301">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Subscribe</span>
-            <h2 class="cs-title">Subscribe Your Email for Newsletter & Promotion</h2>
+            <span class="cs-topper">Enter your email for a</span>
+            <h2 class="cs-title">Free Website for your Detroit Small Business</h2>
             <p class="cs-text">
-                Nulla dig nissimmi quis neque interdum. An Ohio man allegedly punched his lawyer in the face in court Tuesday upon finding out he was sentenced.
+              We are giving away ONE $3,500 Website for a small business in Detroit. Enter your email and we will be in touch to see if you are eligible.  
             </p>
             <form class="cs-form" name="Contact Form" method="post">
                 <input class="cs-input" type="email" id="cs-email-301" name="find-us" placeholder="Email Address">
-                <button class="cs-button-solid cs-submit" type="submit">Subscribe Now</button>
+                <button class="cs-button-solid cs-submit" type="submit">Send It</button>
             </form>
         </div>
     </div>
     <!--Background Image-->
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/scale-m.jpg">
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/scale.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/scale.jpg" alt="scale" width="1920" height="486" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="/assets/images/bottom.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/bottom.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/bottom.jpg" alt="scale" width="1920" height="486" aria-hidden="true">
     </picture>
 </section>
                                 
