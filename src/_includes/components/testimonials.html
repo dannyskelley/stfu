@@ -2,187 +2,207 @@
 <!--                   Reviews                    -->
 <!-- ============================================ -->
 
-
-<style>
-    /*-- -------------------------- -->
+<STYLE>
+  /*-- -------------------------- -->
 <---          Reviews           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews-1088 {
+  #reviews-1672 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
   }
-  #reviews-1088 .cs-container {
+  #reviews-1672 .cs-container {
     width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 34.375rem;
+    max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    /* 40px - 64px */
+    gap: clamp(2.5rem, 4.5vw, 4rem);
   }
-  #reviews-1088 .cs-content {
-    /* set text align to left if content needs to be left aligned */
+  #reviews-1672 .cs-content {
     text-align: left;
     width: 100%;
-    max-width: 39.375rem;
-    margin-right: auto;
     display: flex;
     flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #reviews-1088 .cs-title {
-    max-width: 25ch;
-    margin: 0;
+  #reviews-1672 .cs-title {
+    margin: 0rem;
   }
-  #reviews-1088 .cs-card-group {
-    margin: 0;
+  #reviews-1672 .cs-card-group {
+    width: 100%;
     padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    align-items: stretch;
     /* 16px - 20px */
-    gap: clamp(1rem, 2vw, 1.25rem);
+    gap: clamp(1rem, 2.5vw, 1.25rem);
   }
-  #reviews-1088 .cs-item {
+  #reviews-1672 .cs-item {
     list-style: none;
-    padding: 0;
-    /* 46px - 56px, pushes up by the same amount the cs-image margin-top pulld it up for proper spacing */
-    margin: clamp(2.5rem, 5vw, 3.5rem) 0 0;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    /* 20px - 40px top & bottom */
+    /* 20px - 40px left & right */
+    padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
+    background-color: #f7f7f7;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+    
     grid-column: span 12;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     position: relative;
+    /* 24px - 48px */
+    gap: clamp(1.5rem, 4vw, 3rem);
   }
-  #reviews-1088 .cs-item:hover .cs-flex {
-    background-color: var(--primary);
+  #reviews-1672 .cs-flex-group {
+    /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
+    margin-top: auto;
+    margin-bottom:30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
   }
-  #reviews-1088 .cs-icon {
+  #reviews-1672 .cs-profile {
     width: 3.25rem;
     height: auto;
-    display: block;
-    position: absolute;
-    /* 24px - 36px, same values as the padding on cs-item-text */
-    top: clamp(1.5rem, 3vw, 2.25rem);
-    right: clamp(1.5rem, 3vw, 2.25rem);
-  }
-  #reviews-1088 .cs-image {
-    /* 80px - 112px */
-    width: clamp(5rem, 10vw, 7rem);
-    height: auto;
-    /* 40px - 56px, same growth rate as the cs-image */
-    /* 24px - 36px marign left, same value as the padding on cs-item-text */
-    margin: calc(clamp(2.5rem, 5vw, 3.5rem)*-1) 0 2.25rem clamp(1.25rem, 3vw, 2.25rem);
     border-radius: 50%;
+    position: relative;
     display: block;
   }
-  #reviews-1088 .cs-item-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    text-align: left;
-    margin: 0;
-    /* 24px - 36px */
-    padding: 0 clamp(1.5rem, 3vw, 2.25rem) clamp(1.25rem, 3vw, 2.25rem);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
-    color: var(--bodyTextColor);
-  }
-  #reviews-1088 .cs-flex {
-    text-align: center;
-    padding: 1.5rem;
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
+  #reviews-1672 .cs-profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    /* pushes up against the cs-item-text so if there's a different amount of content from the other cards, it will push down and stretch the card to fill the container vertically. This makes all the cards the same height no matter how much content each one has */
+    /* makes the image behave like a background image */
+    object-fit: cover;
+  }
+  #reviews-1672 .cs-name {
+    /* 20px - 25px */
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
     margin-top: auto;
-    background-color: #1a1a1a;
+    color: var(--headerColor);
+    display: block;
+  }
+  #reviews-1672 .cs-job {
+    /* 14px - 16px */
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #reviews-1672 .wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-    transition: background-color 0.3s;
+    gap: 1rem;
+    margin-bottom:90px;
   }
-  #reviews-1088 .cs-name {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-    line-height: 1.2em;
-    text-align: inherit;
-    margin: 0;
-    font-weight: 700;
-    padding: 0;
-    color: var(--bodyTextColorWhite);
+  #reviews-1672 .cs-item-stars {
+    width: 6.75rem;
+    height: auto;
   }
-  #reviews-1088 .cs-desc {
+  #reviews-1672 .cs-review {
     /* 14px - 16px */
-    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
     line-height: 1.5em;
-    text-align: inherit;
     margin: 0;
-    padding: 0;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
+    z-index: 1;
+  }
+  #reviews-1672 .cs-quote {
+    width: 5.375rem;
+    height: auto;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: 0;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #reviews-1088 .cs-container {
-    max-width: 80rem;
-  }
-  #reviews-1088 .cs-item {
+  #reviews-1672 .cs-item {
     grid-column: span 4;
   }
 }
                                 
-</style>
+</STYLE>
 
-<section id="reviews-1088">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Testimonials</span>
-            <h2 class="cs-title">Happy Customer Feedback About Our Service</h2>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <img class="cs-image" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/review1.png" alt="profile" width="112" height="112" aria-hidden="true" decoding="async" loading="lazy">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/quotes-2.svg" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
-                <p class="cs-item-text">
-                    Nulla ultricies justo sit amet ante efficitur, eget pharetra augue efficitur. Vestibulum viverra, dolor sit amet ultricies.
-                </p>
-                <div class="cs-flex">
-                    <span class="cs-name">Martha Darby</span>
-                    <span class="cs-desc">Senior Executive</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <img class="cs-image" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/review2.png" alt="profile" width="112" height="112" aria-hidden="true" decoding="async" loading="lazy">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/quotes-2.svg" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
-                <p class="cs-item-text">
-                    Nulla ultricies justo sit amet ante efficitur, eget pharetra augue efficitur. Vestibulum viverra, dolor sit amet ultricies.
-                </p>
-                <div class="cs-flex">
-                    <span class="cs-name">Brayan Grilcist</span>
-                    <span class="cs-desc">Senior Executive</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <img class="cs-image" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/reviews3.png" alt="profile" width="112" height="112" aria-hidden="true" decoding="async" loading="lazy">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/quotes-2.svg" alt="icon" width="52" height="36" aria-hidden="true" decoding="async" loading="lazy">
-                <p class="cs-item-text">
-                    Nulla ultricies justo sit amet ante efficitur, eget pharetra augue efficitur. Vestibulum viverra, dolor sit amet ultricies.
-                </p>
-                <div class="cs-flex">
-                    <span class="cs-name">Brucei Elowed </span>
-                    <span class="cs-desc">Senior Executive</span>
-                </div>
-            </li>
-        </ul>
-    </div>
+<section id="reviews-1672">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Hear from</span>
+          <h2 class="cs-title">Our Happy Customers</h2>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <div class="cs-flex-group">
+                  <picture class="cs-picture">
+                      <img class="cs-profile" src="/assets/images/paul.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                  </picture>
+                  <span class="cs-name">
+                      Paul Blossom
+                      <span class="cs-job">Blossomtile.com</span>
+                  </span>
+              </div>
+              <div class="wrapper">
+                  <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                  <p class="cs-review">
+                    Listen folks I think it’s a shame that I can only give Danny five stars. I would give him 25 stars if I could just a talented guy such a great demeanor we just love his graphic design knowledge and the way he did. Our website is just outstanding. I highly recommend Danny Skelley for all your digital website needs.                  </p>
+              </div>
+              <!--Quote Icon-->
+              <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex-group">
+                  <picture class="cs-picture">
+                      <img class="cs-profile" src="/assets/images/joe.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                  </picture>
+                  <span class="cs-name">
+                      Joe DiPasquale 
+                      <span class="cs-job">Regroup.com</span>
+                  </span>
+              </div>
+              <div class="wrapper">
+                  <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                  <p class="cs-review">
+                    Gandalf gave our site exactly the look and feel we wanted. 10 out of 10. Extremely easy to work with, receptive to feedback, and able to design in any style or format as well as come up with his own design suggestions and work independently. We were fortunate to have Gandalf work with us and I wouldn't hesitate to work with them again. 
+                  </p>
+              </div>
+              <!--Quote Icon-->
+              <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+          </li>
+          <li class="cs-item">
+              <div class="cs-flex-group">
+                  <picture class="cs-picture">
+                      <img class="cs-profile" src="/assets/images/brian.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                  </picture>
+                  <span class="cs-name">
+                    Brian Portillo 
+                      <span class="cs-job">Senior Sofrware Engineer</span>
+                  </span>
+              </div>
+              <div class="wrapper">
+                  <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                  <p class="cs-review">
+                    Gandalf is the best design company that I have had the pleasure of working with. They incorporate latest industry trends without losing the the focus of the business. A very keen eye for amazing design and are constantly trying to innovate to set their designs above the status quo
+                  </p>
+              </div>
+              <!--Quote Icon-->
+              <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+          </li>
+      </ul>
+  </div>
 </section>
-                                
+                              
