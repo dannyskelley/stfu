@@ -1124,12 +1124,13 @@
   }
   #footer .credit {
     margin: auto;
+    max-width: 82.5rem;
     margin-top: 6.25rem;
     width: 96%;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    font-weight: 100;
     line-height: 2.25rem;
     color: #fff;
-    text-align: center;
   }
   #footer .credit a {
     text-decoration: none;

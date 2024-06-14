@@ -1329,12 +1329,14 @@
 
         .credit {
             margin: auto;
+            max-width: 82.5rem;
             margin-top: calc(100 / 16 * 1rem);
             width: 96%;
-            font-size: calc(16 / 16 * 1rem);
+            font-size: calc(16 / 16 * .8rem);
+            font-weight: 100;
             line-height: calc(36 / 16 * 1rem);
             color: #fff;
-            text-align: center;
+            
 
             a {
                 text-decoration: none;
