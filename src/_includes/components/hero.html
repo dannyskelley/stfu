@@ -1,0 +1,262 @@
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+<style>
+    /*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1804 {
+    /* 200px - 244px top */
+    /* 60px - 100px  bottom */
+    padding: clamp(10.5rem, 16.82vw, 15.25rem) 1rem 0;
+    background-color: #0f0d0e;
+    /* clips the svg wave from overflowing */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1804 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #hero-1804 .cs-content {
+    
+    max-width: 39.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+  #hero-1804 .cs-topper {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #hero-1804 .cs-title {
+    /* 39px - 84px */
+    font-size: clamp(2.4375rem, 6.3vw, 5.25rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    /* 23 characters including spaces wide */
+    
+    margin: 0 0 1rem 0;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+  #hero-1804 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 33.1875rem;
+    margin: 0 0 2rem 0;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+ 
+  #hero-1804 .cs-video-group {
+    width: 100%;
+    height: 100vw;
+    min-height: 21.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1804 .cs-video-group:before {
+    /* light grey section background. We attach it as a pseudo to the video group so it can be responsive and anchored in position to always be in the same position behind the cs-box */
+    content: '';
+    width: 300vw;
+    height: 500%;
+    background: #000;
+    opacity: 0.3;
+    position: absolute;
+    display: block;
+    bottom: 3.375rem;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  #hero-1804 .cs-box {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    /* 24px - 32px */
+    padding: clamp(1.5rem, 4vw, 2rem);
+    background-color: var(--primary);
+    display: flex;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+  #hero-1804 .cs-header {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #hero-1804 .cs-box-icon {
+    /* 40px - 48px */
+    width: clamp(2.5rem, 4vw, 3rem);
+  }
+  #hero-1804 .cs-video-wrapper {
+    width: 100%;
+    /* changes to 90% at tablet, then back to 100% at desktop */
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+
+  #hero-1804 .cs-video-wrapper:hover .cs-play {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  #hero-1804 .cs-video-wrapper video,
+  #hero-1804 .cs-video-wrapper .cs-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: contain;
+  }
+  #hero-1804 .cs-video-wrapper video img,
+  #hero-1804 .cs-video-wrapper .cs-picture img {
+    position: absolute;
+ 
+    left: 0;
+
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: contain;
+  }
+  #hero-1804 .cs-play {
+    /* 80px - 120px */
+    width: clamp(5rem, 14vw, 7.5rem);
+    height: clamp(5rem, 14vw, 7.5rem);
+    display: flex;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  #hero-1804 .cs-play.cs-hide {
+    transform: translate(-50%, -50%) scale(0) !important;
+    opacity: 0;
+  }
+  #hero-1804 .cs-icon {
+    width: 1.25rem;
+    height: auto;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #hero-1804 .cs-container {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  #hero-1804 .cs-content {
+    text-align: left;
+    width: 47%;
+    /* 168px - 300pxm this maintains consistent space between the cs content and the cs-box so no matter how much content you add here, there will always be X amount of padding between the bottom of the cs-content and the bottom of the cs-video-group */
+    padding-bottom: clamp(10.5rem, 30vw, 18.75rem);
+    flex: none;
+    align-items: flex-start;
+    align-self: flex-start;
+  }
+
+  #hero-1804 .cs-video-group {
+    width: 50%;
+    max-width: 39.375rem;
+    height: auto;
+
+  }
+  #hero-1804 .cs-video-group:before {
+    bottom: 6.25rem;
+  }
+  #hero-1804 .cs-video-wrapper {
+    /* changes back to 100% at desktop */
+    height: 90%;
+  }
+  #hero-1804 .cs-box {
+    width: 80%;
+    max-width: 19.1875rem;
+    flex-direction: column;
+    position: absolute;
+    /* chnages to 48px at desktop */
+    bottom: 0;
+    /* -112px to 200px */
+    left: calc(clamp(7.25rem, 17vw, 12.5rem)*-1);
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-1804 .cs-video-wrapper {
+    height: 100%;
+  }
+  #hero-1804 .cs-box {
+    bottom: 3rem;
+  }
+}
+                                
+</style>
+<section id="hero-1804">
+    <div class="cs-container">
+        <div class="cs-content">
+   
+            <h1 class="cs-title aos-item" data-aos="fade-up">We make websites fast</h1>
+
+            <span class="cs-topper"  data-aos="fade-up">
+                To grow your business faster
+            </span>
+            <p class="cs-text" data-aos="fade-up">
+                Get a website that clearly tells your customer what you offer, how to buy it & how it improves their life
+            </p>
+            <a href="" class="cs-button-solid"  data-aos="fade-up">Schedule 15 min Call</a>
+        </div>
+        <div class="cs-video-group">
+            <div class="cs-video-wrapper">
+               <picture class="cs-picture" data-aos="fade-up">
+                    <source media="(max-width: 600px)" srcset="/assets/images/home.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/home.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/home.jpg" alt="body builder" width="630">
+                </picture> 
+  
+            </div>
+     
+        </div>
+    </div>
+</section>
+                                
