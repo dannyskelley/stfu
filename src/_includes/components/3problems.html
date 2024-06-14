@@ -34,6 +34,7 @@
   }
   #sbs-1585 .cs-picture img {
     position: absolute;
+    border-radius: 999px;
     top: 0;
     left: 0;
     height: 100%;
@@ -132,41 +133,7 @@
     align-items: flex-start;
     gap: 0.5rem;
   }
-  #sbs-1585 .cs-button-solid {
-    font-size: 1rem;
-    line-height: 3.5em;
-    text-decoration: none;
-    font-weight: 700;
-    overflow: hidden;
-    width: auto;
-    margin: 0;
-    color: #fff;
-    padding: 0 3rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: color 0.3s;
-  }
-  #sbs-1585 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 0%;
-    background: #1a1a1a;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #sbs-1585 .cs-button-solid:hover {
-    color: var(--primary);
-  }
-  #sbs-1585 .cs-button-solid:hover:before {
-    width: 100%;
-  }
+  
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -205,65 +172,65 @@
                                 
 </style>
 
-<section id="sbs-1585">
+<section id="sbs-1585" class="aos-item" data-aos="fade-up"">
     <div class="cs-container">
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models.png">
+            <source media="(max-width: 600px)" srcset="/assets/images/home2.jpg">
             <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models.png">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models.png" alt="models" width="586" height="690">
+            <source media="(min-width: 601px)" srcset="/assets/images/home2.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/home2.jpg" alt="models" width="586" height="690">
         </picture>
         <div class="cs-content">
-            <span class="cs-topper">Our Features</span>
-            <h2 class="cs-title">Accessible Wardrobe That Men Can Wear and Curate Over Time</h2>
+            <span class="cs-topper">Is your website</span>
+            <h2 class="cs-title">Lacking?</h2>
             <ul class="cs-card-group">
                 <li class="cs-item">
                     <div class="wrapper">
-                        <span class="cs-item-number">01</span>
+                        <span class="cs-item-number">-</span>
                         <h3 class="cs-h3">
-                            Member Discount
+                            Slow
                         </h3>
                     </div>
                     <p class="cs-item-text">
-                        It’s no secret that one person alone cannot overcome the greatest humanitarian crises.
+                      60% of people are searching on their phones. We make your site load fast on phones.
                     </p>
                 </li>
                 <li class="cs-item">
                     <div class="wrapper">
-                        <span class="cs-item-number">02</span>
+                        <span class="cs-item-number">-</span>
                         <h3 class="cs-h3">
-                            Safe Payment
+                            Confusing
                         </h3>
                     </div>
                     <p class="cs-item-text">
-                        It’s no secret that one person alone cannot overcome the greatest humanitarian crises.
+                      If people are confused about what you are selling they will not buy it. We help you clarify your message.
                     </p>
                 </li>
                 <li class="cs-item">
                     <div class="wrapper">
-                        <span class="cs-item-number">03</span>
+                        <span class="cs-item-number">-</span>
                         <h3 class="cs-h3">
-                            Shop with Confidence
+                            Expensive
                         </h3>
                     </div>
                     <p class="cs-item-text">
-                        It’s no secret that one person alone cannot overcome the greatest humanitarian crises.
+                      Most websites cost thousands of dollars. We charge 0 Down, $100/month
                     </p>
                 </li>
                 <li class="cs-item">
                     <div class="wrapper">
-                        <span class="cs-item-number">04</span>
+                        <span class="cs-item-number">-</span>
                         <h3 class="cs-h3">
-                            Money Return
+                          No Google Analytics
                         </h3>
                     </div>
                     <p class="cs-item-text">
-                        It’s no secret that one person alone cannot overcome the greatest humanitarian crises.
+                      We provide Google Analytics for free so you can know how your website is doing at all times.
                     </p>
                 </li>
             </ul>
-            <a href="" class="cs-button-solid">View All Collections</a>
+            <a href="" class="cs-button-solid">Schedule 15 Min Call</a>
         </div>
     </div>
 </section>
