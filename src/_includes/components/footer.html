@@ -2,6 +2,12 @@
 <!--                   Footer                     -->
 <!-- ============================================ -->
 
+<STYLE>
+    .gandalfpill {transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; background-color: white; padding:0 8px; border-radius: 999px;}
+.gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
+.gandalfpill:hover {border:1px  solid white; background-color: black;  transform: translateY(-5px); transition: all ease .2s;}
+</STYLE>
+
 <footer id="footer">
     <div class="container">
         <div class="left-section">
@@ -71,7 +77,7 @@
 
     <div class="credit">
         <span>Designed & Hand Coded by</span>
-        <a style="margin-left:5px;vertical-align:middle;  display: inline-block; background-color: white; padding:0 8px; border-radius: 999px;" href="/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo" height="12"></a>
+        <a class="gandalfpill" href="/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo" height="12"></a>
         <BR><BR><BR>
         <span class="copyright">
             © {% year %} {{client.name}}</span>
