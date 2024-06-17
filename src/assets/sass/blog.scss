@@ -95,9 +95,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
+  
             }
 
             &:before {
@@ -263,7 +261,7 @@
         .blog-mainImage {
             position: relative;
             display: block;
-            
+            margin-bottom:100px;
             height: clamp(200px, 30vw, 400px);
             width: 100%;
             overflow: hidden;
@@ -388,7 +386,7 @@
 
 /* Mobile - 1024px */
 @media only screen and (min-width: 64rem) {
-    .blog-container {padding-top: 200px;}
+   
     .recent-articles {
         .blog-h1 {
             max-width: calc(500 / 16 * 111rem);
@@ -578,7 +576,7 @@
             position: relative;
             display: block;
             border-radius: calc(8 / 16 * 1em);
-            margin-bottom: calc(50 / 16 * 1em);
+            margin-bottom: calc(50 / 16 * 10em);
             height: clamp(200px, 30vw, 400px);
             width: 100%;
             overflow: hidden;
@@ -712,9 +710,8 @@
             img {
                 display: block;
                 border-radius: calc(8 / 16 * 1rem);
-                margin: calc(16 / 16 * 1rem) 0;
-                height: auto;
-                width: 100%;
+                margin: 0px 0px 100px 0px;
+               
             }
         }
     }
@@ -886,6 +883,8 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+
+    .blog-h1 {margin-top: 100px; font-size: 5rem; max-width: 999px;}
     #cs-footer {
         .cs-logo-group {
             display: flex;

@@ -28,28 +28,31 @@
                 <!--Main Article Image-->
            
 
-                <!--Article Info-->
-                <div class="article-group">
-                    
-                    <div class="blog-authorGroup">
-                        <!--Author Image-->
-                        <picture class="blog-author-img">
-                            <img
-                            src="/assets/svgs/profile.svg"
-                            alt="house"
-                            width="32"
-                            height="32"
-                            decoding="async">
-                        </picture>
-                        <span class="blog-author">{{ author }}</span>
-                        <span aria-hidden="true" class="blog-dot"></span>
-                        <!--Blog Date-->
-                        <span class="blog-date">{{ date | postDate }}</span>
-                    </div>
-                </div>
+
                 <section id="blog-content">
                     {{ content | safe }}
                 </section>
+
+
+                                <!--Article Info-->
+                                <div class="article-group">
+                    
+                                    <div class="blog-authorGroup">
+                                        <!--Author Image-->
+                                        <picture class="blog-author-img">
+                                            <img
+                                            src="/assets/svgs/profile.svg"
+                                            alt="house"
+                                            width="32"
+                                            height="32"
+                                            decoding="async">
+                                        </picture>
+                                        <span class="blog-author">{{ author }}</span>
+                                        <span aria-hidden="true" class="blog-dot"></span>
+                                        <!--Blog Date-->
+                                        <span class="blog-date">{{ date | postDate }}</span>
+                                    </div>
+                                </div>
             </article>
         </div>
         <!-- End .main-content -->
