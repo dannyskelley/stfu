@@ -6,7 +6,7 @@ author: Gandalf
 date: 2024-06-14T17:04:00.000Z
 tags:
   - post
-image: /assets/images/blog/desktop-1.jpg
+image: /assets/images/blog/desktop-1-1-.jpg
 imageAlt: Google Workspaces with Netlify DNS Setup
 ---
 This is a tutorial for setting up [Google Workspaces](https://workspace.google.com/) with Domain Names managed through [Netlify's DNS Manager](https://docs.netlify.com/domains-https/netlify-dns/).
