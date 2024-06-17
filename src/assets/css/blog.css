@@ -762,9 +762,9 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   .blog-h1 {
-    margin-top: 100px;
+    margin-top: 250px;
     font-size: 5rem;
-    max-width: 999px;
+    max-width: 1200px;
   }
   #cs-footer .cs-logo-group {
     display: flex;
