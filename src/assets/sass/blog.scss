@@ -7,8 +7,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 
-    .blog-h1 {margin-top: 150px;}
-    
+    .blog-h1 {line-height: .9em;}
     .blog-container {
         margin: auto;
         max-width: calc(1120 / 16 * 1em);
@@ -229,6 +228,7 @@
         align-items: center;
         row-gap: calc(50 / 16 * 1em);
     }
+   
 
     .main-content {
         display: flex;
@@ -327,7 +327,7 @@
         }
 
         .blog-h1 {
-            margin: 100px 0px;
+            margin: 20px 0px;
             font-size: clamp(32px, 5vw, 132px);
             line-height: .9em;
             font-weight: 700;
@@ -395,9 +395,12 @@
         display: block;
         margin:0px 0px 50px;
     }
+
     .recent-articles {
         .blog-h1 {
             max-width: calc(500 / 16 * 111rem);
+            margin: 100px  0px;
+            
         }
     }
 }
