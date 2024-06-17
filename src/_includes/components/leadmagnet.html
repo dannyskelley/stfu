@@ -164,8 +164,13 @@
             <p class="cs-text">
               We are giving away ONE $3,500 Website for a small business in Detroit. Enter your email and we will be in touch to see if you are eligible.  
             </p>
-            <form class="cs-form" name="Contact Form" method="post">
-                <input class="cs-input" type="email" id="cs-email-301" name="find-us" placeholder="Email Address">
+            <form netlify netlify-honeypot="bot-field" class="cs-form" name="Lead Form" method="post">
+              <p style="display: none;">
+                <label>
+                  Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
+              </p>
+              <input class="cs-input" type="email" id="cs-email-301" name="find-us" placeholder="Email Address">
                 <button class="cs-button-solid cs-submit" type="submit">Send It</button>
             </form>
         </div>
