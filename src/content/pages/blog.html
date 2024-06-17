@@ -33,6 +33,11 @@ eleventyNavigation:
             {% else %}
                 {%- for post in collections.post | reverse -%}
                     <article class="recent-articles">
+                        <a href="{{ post.url }}"><h2 class="blog-h1">
+                            {{ post.data.title }}
+                        </h2>
+                    </a>
+                    
                         <!--Main Article Image-->
                         <picture class="blog-mainImage">
                             <img
@@ -56,10 +61,7 @@ eleventyNavigation:
                                 <!--<span class="blog-author">{{ post.data.author }}</span>-->
                                 
                         
-                            <a href="{{ post.url }}"><h2 class="blog-h1">
-                                {{ post.data.title }}
-                            </h2>
-                        </a>
+                       
                         <div class="blog-authorGroup"><!--Blog Date-->
                         <span aria-hidden="true" class="blog-dot"></span> <span class="blog-date">{{ post.date | postDate }}</span>
                             <!--<p class="blog-desc">

@@ -6,10 +6,15 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+
+    .blog-h1 {margin-top: 150px;}
+    
     .blog-container {
         margin: auto;
         max-width: calc(1120 / 16 * 1em);
         width: 94%;
+       
+    
     }
 
     .blog-link {
@@ -68,9 +73,7 @@
         z-index: 1;
         position: relative;
 
-        .blog-container {
-            padding: clamp(100px, 14vw, 200px) 0 clamp(50px, 11vw, 100px);
-        }
+       
 
         .blog-header {
             margin: 0;
@@ -216,7 +219,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     .blog-container {
-        padding: clamp(120px, 7vw, 100px) 0;
+        padding: 2em;
     }
 
     .main-content-wrapper {
@@ -234,6 +237,7 @@
         align-items: center;
         width: 100%;
         row-gap: calc(50 / 16 * 1em);
+        padding-top:100px;
     }
 }
 
@@ -261,7 +265,7 @@
         .blog-mainImage {
             position: relative;
             display: block;
-            margin:100px 0px 50px;
+            margin:0px 0px 10px;
             height: clamp(200px, 30vw, 400px);
             width: 100%;
             overflow: hidden;
@@ -323,8 +327,8 @@
         }
 
         .blog-h1 {
-            margin: calc(16 / 16 * 1rem) 0;
-            font-size: clamp(20px, 5vw, 132px);
+            margin: 100px 0px;
+            font-size: clamp(32px, 5vw, 132px);
             line-height: .9em;
             font-weight: 700;
             color: var(--headerColor);
@@ -386,7 +390,11 @@
 
 /* Mobile - 1024px */
 @media only screen and (min-width: 64rem) {
-   
+    .blog-mainImage {
+        position: relative;
+        display: block;
+        margin:0px 0px 50px;
+    }
     .recent-articles {
         .blog-h1 {
             max-width: calc(500 / 16 * 111rem);
@@ -711,6 +719,7 @@
                 display: block;
                 border-radius: calc(8 / 16 * 1rem);
                 margin: 0px 0px 100px 0px;
+                max-width: 100%;
                
             }
         }
@@ -884,7 +893,7 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
 
-    .blog-h1 {margin-top: 250px; font-size: 5rem; max-width: 1200px;}
+    .blog-h1 {margin-top: 250px; font-size: clamp(32px, 5vw, 132px); max-width: 1200px; line-height: 0.9em;}
     #cs-footer {
         .cs-logo-group {
             display: flex;
