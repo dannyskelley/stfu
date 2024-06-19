@@ -1219,6 +1219,37 @@
     display: inline-block;
   }
 }
+.bigArrow {
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: -100px auto 100px;
+  display: block;
+}
+
+.bigArrow:hover {
+  transform: scale(1.5);
+  border: 0px;
+  background-color: white;
+}
+
+.bigArrow:hover:before {
+  opacity: 0;
+}
+
+.bigArrow img {
+  width: 20px;
+  vertical-align: middle;
+  filter: grayscale(1) brightness(1000%);
+  transition: all ease 0.5s;
+}
+
+.bigArrow:hover img {
+  transform: scale(1.5);
+  filter: brightness(0%);
+  transition: all ease 0.2s;
+}
+
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #footer {
