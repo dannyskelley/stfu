@@ -34,13 +34,13 @@ button {background-color: transparent; border: 0px;;}
     top: 0;
   }
   body.scroll #cs-navigation .cs-logo img {
-    height: 35px;
-    transition: all ease .3s;
+    height: 30px;
+    transition: height ease .3ms;
   }
 
   body.scroll #cs-navigation:before {
     border-radius: 0;
-    transition: all ease  .2ms;
+    transition: border-radius ease  .2ms;
   }
   body.scroll #cs-navigation .cs-ul-wrapper {
     top: 100%;
@@ -124,6 +124,7 @@ button {background-color: transparent; border: 0px;;}
     height: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
+    transition: all ease .3s;
   }
   #cs-navigation .cs-toggle {
     width: 3.5rem;
