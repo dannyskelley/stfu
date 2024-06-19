@@ -191,7 +191,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   .blog-container {
-    padding: 2em;
+    padding: 1.5em;
   }
   .main-content-wrapper {
     display: flex;
