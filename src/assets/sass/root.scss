@@ -12,7 +12,7 @@ a {text-decoration: none;}
 
     // Website colors
     :root {
-        --primary: red;
+        --primary: white;
         --primaryLight: #ffd675;
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
@@ -69,7 +69,8 @@ a {text-decoration: none;}
         z-index: 1;
         position: relative;
         display: inline-block;
-        background-color: var(--primary);
+        background-color:black;
+        border:2px solid white;
         width: auto;
         padding: 0 calc(30 / 16 * 1rem);
         text-decoration: none;
@@ -77,7 +78,7 @@ a {text-decoration: none;}
         font-size: calc(16 / 16 * 1rem);
         line-height: calc(50 / 16 * 1em);
         font-weight: bold;
-        border-radius: 999px;
+    
 
         // Transition Properties
         color: #fff;
@@ -335,16 +336,6 @@ a {text-decoration: none;}
     }
 
     #cs-navigation {
-        z-index: 10000;
-        position: fixed;
-        background-color: #fff;
-        width: 100%;
-        /* prevents padding from affecting height and width */
-        box-sizing: border-box;
-        padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "Poppins", "Arial", sans-serif;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         .cs-container {
             display: flex;
@@ -852,15 +843,14 @@ a {text-decoration: none;}
 @media only screen and (min-width: 64rem) {
     #cs-navigation {
         z-index: 10000;
-        position: fixed;
-        background-color: #fff;
+       
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: 0 calc(16 / 16 * 1rem);
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: "Poppins", "Arial", sans-serif;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     
 
         .cs-container {
             display: flex;
@@ -1212,7 +1202,7 @@ a {text-decoration: none;}
 /* Mobile */
 @media only screen and (min-width: 0rem) {
     #footer {
-        background: #1c1c1c;
+        background: #000;
         padding: calc(84 / 16 * 1rem) 0 calc(20 / 16 * 1rem);
         font-size: min(4vw, 1.2em);
 
