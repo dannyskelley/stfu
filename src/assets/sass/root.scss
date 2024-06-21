@@ -17,7 +17,7 @@ a {text-decoration: none;}
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
-        --bodyTextColor: #4e4b66;
+        --bodyTextColor: white;
         --bodyTextColorWhite: #fafbfc;
 
         /* 13px - 16px */
@@ -50,7 +50,7 @@ a {text-decoration: none;}
         font-size: var(--headerFontSize);
         line-height: 1.2em;
         font-weight: 900;
-        color: var(--headerColor);
+        color: #fff;
         text-align: inherit;
     }
 

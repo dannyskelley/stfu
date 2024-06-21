@@ -16,7 +16,7 @@
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
-    --bodyTextColor: #4e4b66;
+    --bodyTextColor: white;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -44,7 +44,7 @@
     font-size: var(--headerFontSize);
     line-height: 1.2em;
     font-weight: 900;
-    color: var(--headerColor);
+    color: #fff;
     text-align: inherit;
   }
   .cs-text {
