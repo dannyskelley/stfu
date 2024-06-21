@@ -19,7 +19,7 @@
         </div>
         <div class="right-section">
             <div class="lists">
-                <ul id="cs-expanded" class="cs-ul">
+                <ul id="cs-expanded" class="cs-ul" style="margin-bottom: 100px;">
                     {% set navPages = collections.all | eleventyNavigation %}
   
                     {# Loop through all pages with a eleventyNavigation in the frontmatter #}
@@ -109,7 +109,7 @@
                     <li>
                         Email
                         <BR>
-                        <a href="mailto:{{client.email}}">designggandalf@gmail.com</a>
+                        <a href="mailto:{{client.email}}">{{client.email}}</a>
                     </li>
                 </ul>
             </div>

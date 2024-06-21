@@ -7,6 +7,9 @@
   a {
     text-decoration: none;
   }
+  * {
+    scroll-behavior: smooth;
+  }
   :root {
     --primary: red;
     --primaryLight: #ffd675;

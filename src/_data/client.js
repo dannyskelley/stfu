@@ -1,6 +1,6 @@
 module.exports = {
     "name": "Gandalf",
-    "email": "designgandalf@gmail.com",
+    "email": "info@designgandalf.com",
     "phoneForTel": "313.801.7388",
     "phoneFormatted": "(313) 801-7388",
     "address": {
