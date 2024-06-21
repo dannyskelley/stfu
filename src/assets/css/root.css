@@ -70,8 +70,6 @@
     font-weight: bold;
     border-radius: 999px;
     color: #fff;
-    transition: color 0.3s;
-    transition-delay: 0.1s;
     text-align: center;
   }
   .cs-button-solid:hover {
@@ -80,6 +78,7 @@
   .cs-button-solid:hover:before {
     width: 100%;
     opacity: 1;
+    transition: all ease 0.2s;
   }
   .cs-button-solid:before {
     z-index: -1;
