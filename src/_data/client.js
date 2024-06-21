@@ -1,10 +1,10 @@
 module.exports = {
-    "name": "Gandalf",
-    "email": "info@designgandalf.com",
-    "phoneForTel": "313.801.7388",
-    "phoneFormatted": "(313) 801-7388",
+    "name": "Tomato Tattoo",
+    "email": "info@tomatotattoo.com",
+    "phoneForTel": "(630) 241-0669",
+    "phoneFormatted": "(630) 241-0669",
     "address": {
-        "lineOne": "210 Rhode Island Street",
+        "lineOne": "test",
         "lineTwo": "",
         "city": "Highland Park",
         "state": "MI",
