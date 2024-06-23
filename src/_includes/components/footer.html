@@ -20,64 +20,28 @@
         <div class="right-section">
             <div class="lists">
                 <ul id="cs-expanded" class="cs-ul" style="margin-bottom: 100px;">
-                    {% set navPages = collections.all | eleventyNavigation %}
+                    <li class="cs-li">
+                        <a href="/" class="cs-li-link {{ 'cs-active' if '/' == page.url }}">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a target="_blank" href="https://www.toasttab.com/local/order/kellys-bar-hamtramck/r-ebadf9c7-7b98-42a4-8d2d-36dc92b70bfc?diningOption=takeout&rwg_token=AJKvS9W_vNJcE4VXlPejJg3LEVGVOGSqnKNkto8vCtRnsC0XXBD5PHrNuZJJ_GVG9bn1TMwFcqjLNuxX4vosC3sCsNeUma2kmw%3D%3D" class="cs-li-link {{ 'cs-active' if 'artists' == page.fileSlug }}">
+                           Menu
+                        </a>
+                    </li>
+                    
+                    <li class="cs-li">
+                        <a target="_blank" href="https://www.facebook.com/kellysbarinhamtramck" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
+                            Facebook
+                        </a>
+                    </li>
   
-                    {# Loop through all pages with a eleventyNavigation in the frontmatter #}
-                    {% for entry in navPages %}
-  
-                        {# Define a hasChild variable to make it easier to test what navigation items are have child dropdown pages #}
-                        {% set hasChild = entry.children.length %}
-  
-                        {# Check the frontmatter for hideOnMobile/hideOnDesktop. Form a list of classes to be joined when the item is rendered #}
-                        {% set hideClasses = [] %}
-                        {% if entry.hideOnMobile %}
-                            {% set hideClasses = (hideClasses.push("cs-hide-on-mobile"), hideClasses) %}
-                        {% endif %}
-                        {% if entry.hideOnDesktop %}
-                            {% set hideClasses = (hideClasses.push("cs-hide-on-desktop"), hideClasses) %}
-                        {% endif %}
-  
-                        {# If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes #}
-                        <li class="cs-li {% if hasChild %} cs-dropdown {% endif %} {{ hideClasses | join(" ") }}">
-  
-                            {# If the page has child dropdown pages, render it as a <button> tag with the appropriate dropdown HTML #}
-                            {% if hasChild %}
-  
-                                {# Check to see if the user's current page is one of the child pages. If so, apply the cs-active class to the dropdown parent #}
-                                {% set activeClass = "" %}
-                                {% for child in entry.children %}
-                                    {% if child.url == page.url %}
-                                        {% set activeClass = "cs-active" %}
-                                    {% endif %}
-                                {% endfor %}
-  
-                                {# Render the <button> with the active class, dropdown icon and child links #}
-                                <button 
-                                   style="color:white;" class="cs-li-link cs-dropdown-button {{ activeClass }}"
-                                    aria-expanded="false"
-                                    aria-controls="dropdown-{{ entry.key }}"
-                                    aria-label="dropdown-{{ entry.key }}"
-                                >
-                                    {{ entry.key }}
-                                    <img class="cs-drop-icon" style="filter: brightness(1000%) grayscale(1);" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                                </button>
-  
-                                {# Dropdowns have another ul/li set up within the parent li, which gets rendered in the same way as a normal link #}
-                                <ul class="cs-drop-ul" id="dropdown-{{ entry.key }}">
-                                    {% for child in entry.children %}
-                                        <li class="cs-drop-li">
-                                            <a href="{{ child.url }}" class="cs-li-link cs-drop-link">{{ child.key }}</a>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            {% else %}
-                                {# Normal pages are rendered as <a> tags, in the normal way you'd expect #}
-                                <a href="{{ entry.url }}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
-                                    {{ entry.key }}
-                                </a>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
+                    <li class="cs-li">
+                      <a target="_blank" href="https://www.instagram.com/kellysbarhamtramck/" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
+                          Instagram
+                      </a>
+                  </li>
                 </ul>
                 <ul>
                     <li>
@@ -102,18 +66,14 @@
 
                     </li>
                     <li>
-                        Call or Text
+                        Phone
                         <BR>
                         <a href="tel:{{client.phoneForTel}}">
                          
                             {{client.phoneFormatted}}
                         </a>
                     </li>
-                    <li>
-                        Email
-                        <BR>
-                        <a href="mailto:{{client.email}}">{{client.email}}</a>
-                    </li>
+            
                 </ul>
             </div>
         </div>
