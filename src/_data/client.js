@@ -1,5 +1,5 @@
 module.exports = {
-    "name": "Tomato Tattoo",
+    "name": "Kelly's Bar Hamtramck",
     "email": "info@tomatotattoo.com",
     "phoneForTel": "(630) 241-0669",
     "phoneFormatted": "(630) 241-0669",
