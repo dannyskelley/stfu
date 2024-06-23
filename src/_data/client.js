@@ -1,16 +1,17 @@
 module.exports = {
     "name": "Kelly's Bar Hamtramck",
-    "email": "info@tomatotattoo.com",
-    "phoneForTel": "(630) 241-0669",
-    "phoneFormatted": "(630) 241-0669",
+    "email": "info@kellysbarhamtramck.com",
+    "phoneForTel": "(313) 888-9101",
+    "phoneFormatted": "(313) 888-9101",
     "address": {
-        "lineOne": "1205 Maple Ave",
+        "lineOne": "2403 Holbrook Ave",
         "lineTwo": "",
-        "city": "Lisle",
-        "state": "IL",
-        "zip": "60532",
-        "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.9660365507325!2d-88.0751324!3d41.785945600000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e5120cc03adc1%3A0x9cdb5fe6f3de2b89!2s1205%20Maple%20Ave%2C%20Lisle%2C%20IL%2060532!5e0!3m2!1sen!2sus!4v1718991268043!5m2!1sen!2sus"
+        "city": "Hamtramck",
+        "state": "MI",
+        "zip": "48212",
+        "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94172.13357567438!2d-83.20483236815633!3d42.47285837606464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824d2685a8180f9%3A0xa454cbe1002071b6!2sKelly&#39;s%20Bar%20Hamtramck!5e0!3m2!1sen!2sus!4v1719164540545!5m2!1sen!2sus"
     },
+    
     "socials": {
         "facebook": "https://www.facebook.com/",
         "instagram": "https://www.instagram.com/",
