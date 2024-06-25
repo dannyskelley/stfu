@@ -9,19 +9,20 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+    .cs-title {font-size: clamp(8rem, 11.6vw, 22rem)}
     #hero-998 {
       background-color: black;
         min-height: 100vh;
         /* 144px - 280px */
-        padding: clamp(0rem, 25.95vw, 17.5rem) 2rem;
-        padding-top:100px;
+       
+        padding-top:30px;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
         position: relative;
     }
     #hero-998 .cs-container {
         width: 100%;
-        max-width: 80rem;
+    
         margin: auto;
     }
     #hero-998 .cs-content {
@@ -82,7 +83,7 @@
         font-size: clamp(1rem, 1vw, 1.25rem);
         line-height: 1.5em;
         text-align: center;
-        max-width: 32.375rem;
+       
         /* 24px - 48px */
         margin: 0 0 clamp(1.5rem, 3vw, 3rem) 0;
         color: var(--bodyTextColorWhite);
@@ -122,14 +123,7 @@
 }
 /* Desktop Parallax - 1400px */
 @media only screen and (min-width: 87.5rem) {
-    #hero-998 .cs-background {
-        background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/table.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* makes parallax effect */
-        background-attachment: fixed;
-    }
+
     #hero-998 .cs-background img {
         display: none;
     }
@@ -143,25 +137,9 @@
       <div class="cs-content">
           
           <!--Logo-->
-          <picture class="cs-logo">
-              <source media="(max-width: 600px)" srcset="/assets/images/kellyshomelogo.jpg">
-              <source media="(min-width: 601px)" srcset="/assets/images/kellyshomelogo.jpg">
-              <img decoding="async" src="/assets/images/kellyshomelogo.jpg" alt="" width="614" height="166">
-              </picture>
-              <span class="cs-topper">Kelly's Bar Hamtramck</span>
-              <p class="cs-text">
-                2403 Holbrook Ave
+      
+              <h1 class="cs-title">Shut the fuck up</h1>
 
-
-             
-                  
-              </p>
-             
-            
-              <a href="https://www.toasttab.com/local/order/kellys-bar-hamtramck/r-ebadf9c7-7b98-42a4-8d2d-36dc92b70bfc?diningOption=takeout&rwg_token=AJKvS9W_vNJcE4VXlPejJg3LEVGVOGSqnKNkto8vCtRnsC0XXBD5PHrNuZJJ_GVG9bn1TMwFcqjLNuxX4vosC3sCsNeUma2kmw%3D%3D" class="cs-button-solid">Menu</a>
-
-              <a style="margin-top: 50px;" href="tel:{{client.phoneForTel}}"" class="cs-button-solid">Call: {{client.phoneFormatted}}</a>
-              
       </div>
   </div>
   <!--Background Image-->
